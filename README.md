@@ -285,7 +285,3 @@ guide-ai/
 ## 🤝 参与贡献
 
 欢迎提交 PR 或 Issue！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解贡献指南。
-
-## 📄 许可证
-
-本项目采用 [MIT License](LICENSE) 开源。
