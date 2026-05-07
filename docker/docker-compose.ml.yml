@@ -1,0 +1,73 @@
+# =============================================================================
+# ML 服务：MLflow（实验追踪）+ Jupyter（Notebook 服务）
+# 用途：为 code-examples/05-ai-engineering/mlops 和全模块 Notebook 提供服务
+#
+# 启动命令：
+#   docker compose -f docker/docker-compose.ml.yml up -d
+#
+# 启动单个服务：
+#   docker compose -f docker/docker-compose.ml.yml up -d mlflow
+#   docker compose -f docker/docker-compose.ml.yml up -d jupyter
+#
+# 停止服务：
+#   docker compose -f docker/docker-compose.ml.yml down
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # MLflow — 实验追踪与模型注册
+  # 端口：5000
+  # 对应代码模块：05-ai-engineering/mlops
+  # Python 依赖：mlflow
+  # ---------------------------------------------------------------------------
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: guide-ai-mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow_data:/mlflow
+    command: >
+      mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri sqlite:///mlflow/mlflow.db
+      --default-artifact-root /mlflow/artifacts
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5000/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  # ---------------------------------------------------------------------------
+  # Jupyter — Notebook 服务
+  # 端口：8888
+  # 对应代码模块：全模块 Notebook
+  # Python 依赖：jupyter
+  # 访问地址：http://localhost:8888（启动日志中查看 token）
+  # ---------------------------------------------------------------------------
+  jupyter:
+    image: jupyter/scipy-notebook:latest
+    container_name: guide-ai-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../code-examples:/home/jovyan/code-examples
+      - jupyter_data:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8888/api || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  mlflow_data:
+    name: guide-ai-mlflow-data
+  jupyter_data:
+    name: guide-ai-jupyter-data

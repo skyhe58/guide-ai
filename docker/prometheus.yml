@@ -1,0 +1,24 @@
+# Prometheus 配置文件
+# 用于采集 AI 服务的指标数据
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Prometheus 自身指标
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  # vLLM 推理服务指标（需启动 docker-compose.llm.yml）
+  - job_name: "vllm"
+    static_configs:
+      - targets: ["host.docker.internal:8080"]
+    metrics_path: /metrics
+
+  # 自定义 FastAPI 服务指标（代码示例中的 prometheus-client 暴露）
+  - job_name: "fastapi-app"
+    static_configs:
+      - targets: ["host.docker.internal:8000"]
+    metrics_path: /metrics

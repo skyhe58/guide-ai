@@ -1,0 +1,107 @@
+# Deploy to GitHub Pages
+# 自动构建 VitePress 站点并部署到 GitHub Pages
+# 触发条件：push 到 main 分支
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只允许一个部署，跳过排队中的运行，不取消正在进行的运行
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # 1. Checkout 代码
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. 安装 Python 3.11，验证代码语法
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install ruff and check code syntax
+        run: |
+          pip install ruff
+          ruff check code-examples/
+
+      # --- 可选步骤（取消注释以启用）---
+
+      # - name: Run property-based tests with pytest
+      #   run: |
+      #     pip install -r code-examples/requirements-dev.txt
+      #     pytest tests/ -v
+
+      # - name: Verify code examples are importable
+      #   run: |
+      #     python -c "
+      #     import importlib, pathlib, sys
+      #     sys.path.insert(0, 'code-examples')
+      #     errors = []
+      #     for f in sorted(pathlib.Path('code-examples').rglob('__init__.py')):
+      #         module = str(f.parent).replace('/', '.')
+      #         try:
+      #             importlib.import_module(module)
+      #         except Exception as e:
+      #             errors.append(f'{module}: {e}')
+      #     if errors:
+      #         print('Import errors:')
+      #         for err in errors:
+      #             print(f'  {err}')
+      #         sys.exit(1)
+      #     print('All modules imported successfully')
+      #     "
+
+      # --- 可选步骤结束 ---
+
+      # 3. 安装 Node.js 20 + pnpm
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      # 4. 安装 VitePress 依赖
+      - name: Install dependencies
+        run: pnpm install
+        working-directory: docs
+
+      # 5. 构建 VitePress 站点
+      - name: Build VitePress site
+        run: pnpm run build
+        working-directory: docs
+
+      # 6. 上传 artifact
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+      # 7. 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

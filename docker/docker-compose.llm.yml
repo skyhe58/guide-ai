@@ -1,0 +1,97 @@
+# =============================================================================
+# LLM 推理服务：vLLM（高性能推理）+ TGI（HuggingFace 推理）
+# 用途：为 code-examples/02-llm/deployment 和 05-ai-engineering/serving 提供服务
+#
+# ⚠️ 注意：这两个服务都需要 GPU（NVIDIA Container Toolkit）
+# 如果没有 GPU，请使用 Ollama（docker-compose.yml）作为替代方案
+#
+# 启动命令：
+#   docker compose -f docker/docker-compose.llm.yml up -d
+#
+# 启动单个服务：
+#   docker compose -f docker/docker-compose.llm.yml up -d vllm
+#   docker compose -f docker/docker-compose.llm.yml up -d tgi
+#
+# 停止服务：
+#   docker compose -f docker/docker-compose.llm.yml down
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # vLLM — 高性能 LLM 推理（OpenAI 兼容 API）
+  # 端口：8080
+  # 对应代码模块：02-llm/deployment, 05-ai-engineering/serving
+  # Python 依赖：vllm（或通过 HTTP 客户端调用 OpenAI 兼容 API）
+  # GPU 必需：需要 NVIDIA GPU + CUDA
+  # ---------------------------------------------------------------------------
+  vllm:
+    image: vllm/vllm-openai:latest
+    container_name: guide-ai-vllm
+    ports:
+      - "8080:8000"
+    volumes:
+      - vllm_cache:/root/.cache/huggingface
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HF_TOKEN:-}
+    # 默认加载 Qwen2.5-1.5B-Instruct，可通过环境变量 VLLM_MODEL 修改
+    command: >
+      --model ${VLLM_MODEL:-Qwen/Qwen2.5-1.5B-Instruct}
+      --host 0.0.0.0
+      --port 8000
+      --max-model-len 4096
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+
+  # ---------------------------------------------------------------------------
+  # TGI — HuggingFace Text Generation Inference
+  # 端口：8081
+  # 对应代码模块：02-llm/deployment
+  # 调用方式：HTTP 客户端调用
+  # GPU 必需：需要 NVIDIA GPU + CUDA
+  # ---------------------------------------------------------------------------
+  tgi:
+    image: ghcr.io/huggingface/text-generation-inference:latest
+    container_name: guide-ai-tgi
+    ports:
+      - "8081:80"
+    volumes:
+      - tgi_cache:/data
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HF_TOKEN:-}
+    # 默认加载 Qwen2.5-1.5B-Instruct，可通过环境变量 TGI_MODEL 修改
+    command: >
+      --model-id ${TGI_MODEL:-Qwen/Qwen2.5-1.5B-Instruct}
+      --max-input-length 2048
+      --max-total-tokens 4096
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:80/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+
+volumes:
+  vllm_cache:
+    name: guide-ai-vllm-cache
+  tgi_cache:
+    name: guide-ai-tgi-cache

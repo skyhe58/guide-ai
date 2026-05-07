@@ -1,0 +1,51 @@
+# ============================================================
+# guide-ai-examples 依赖清单
+# Python >= 3.11
+# 安装：pip install -r requirements.txt
+# ============================================================
+
+# ── 模块 0：前提准备（Python 生产级 / NumPy / Pandas / FastAPI）──
+numpy>=1.26
+pandas>=2.1
+aiohttp>=3.9
+pydantic>=2.5
+fastapi>=0.109
+uvicorn>=0.27
+
+# ── 模块 1：ML 基础（scikit-learn / PyTorch / 评估调优）──
+scikit-learn>=1.4
+torch>=2.1
+torchvision>=0.16
+matplotlib>=3.8
+optuna>=3.5
+
+# ── 模块 2：大语言模型 LLM（Transformers / 微调 / 部署）──
+transformers>=4.37
+peft>=0.8
+bitsandbytes>=0.42
+tokenizers>=0.15
+ollama>=0.1
+
+# ── 模块 3：AI 应用开发（LangChain / LangGraph / RAG / 评估）──
+langchain>=0.1
+langchain-community>=0.0.10
+langchain-openai>=0.0.5
+langgraph>=0.0.20
+llama-index>=0.10
+chromadb>=0.4
+ragas>=0.1
+
+# ── 模块 4：计算机视觉（OpenCV / YOLO / Diffusion）──
+opencv-python>=4.9
+ultralytics>=8.1
+diffusers>=0.25
+accelerate>=0.26
+
+# ── 模块 5：AI 工程化（MLOps / 监控 / 分布式训练）──
+mlflow>=2.10
+wandb>=0.16
+prometheus-client>=0.20
+deepspeed>=0.13
+
+# ── 模块 6：AI 前沿（MCP 协议）──
+mcp>=1.0

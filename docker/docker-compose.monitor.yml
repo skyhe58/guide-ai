@@ -1,0 +1,79 @@
+# =============================================================================
+# 监控服务：Prometheus（指标采集）+ Grafana（监控面板）
+# 用途：为 code-examples/05-ai-engineering/monitoring 提供监控基础设施
+#
+# 启动命令：
+#   docker compose -f docker/docker-compose.monitor.yml up -d
+#
+# 启动单个服务：
+#   docker compose -f docker/docker-compose.monitor.yml up -d prometheus
+#   docker compose -f docker/docker-compose.monitor.yml up -d grafana
+#
+# 停止服务：
+#   docker compose -f docker/docker-compose.monitor.yml down
+#
+# 访问地址：
+#   Prometheus: http://localhost:9090
+#   Grafana:    http://localhost:3000（默认账号 admin/admin）
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # Prometheus — 指标采集
+  # 端口：9090
+  # 对应代码模块：05-ai-engineering/monitoring
+  # Python 依赖：prometheus-client
+  # ---------------------------------------------------------------------------
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: guide-ai-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--storage.tsdb.retention.time=15d"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:9090/-/healthy || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # ---------------------------------------------------------------------------
+  # Grafana — 监控面板
+  # 端口：3000
+  # 对应代码模块：05-ai-engineering/monitoring
+  # 默认登录：admin / admin
+  # ---------------------------------------------------------------------------
+  grafana:
+    image: grafana/grafana:latest
+    container_name: guide-ai-grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: unless-stopped
+    depends_on:
+      prometheus:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  prometheus_data:
+    name: guide-ai-prometheus-data
+  grafana_data:
+    name: guide-ai-grafana-data
