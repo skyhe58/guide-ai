@@ -121,7 +121,7 @@ print(f"最佳参数: {study.best_params}")
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-ml-basics/evaluation/](https://github.com/your-repo/tree/main/code-examples/01-ml-basics/evaluation/)
+> 💻 完整可运行代码：[code-examples/01-ml-basics/evaluation/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/01-ml-basics/evaluation/)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：scikit-learn、optuna
 

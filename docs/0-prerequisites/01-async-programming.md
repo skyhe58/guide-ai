@@ -225,7 +225,7 @@ asyncio.run(main())
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/00-prerequisites/async_programming/](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/async_programming/)
+> 💻 完整可运行代码：[code-examples/00-prerequisites/async_programming/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/async_programming/)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：asyncio（标准库）、aiohttp
 

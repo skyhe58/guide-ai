@@ -187,7 +187,7 @@ ControlNet 在 SD 基础上添加额外的空间条件控制：
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-cv/diffusion/02_stable_diffusion.py](https://github.com/your-repo/tree/main/code-examples/04-cv/diffusion/02_stable_diffusion.py)
+> 💻 完整可运行代码：[code-examples/04-cv/diffusion/02_stable_diffusion.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/diffusion/02_stable_diffusion.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：diffusers>=0.25, transformers>=4.36（完整模式）
 

@@ -219,7 +219,7 @@ class VideoStream:
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-cv/opencv/03_video_processing.py](https://github.com/your-repo/tree/main/code-examples/04-cv/opencv/03_video_processing.py)
+> 💻 完整可运行代码：[code-examples/04-cv/opencv/03_video_processing.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/opencv/03_video_processing.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：numpy（模拟模式）、opencv-python>=4.8（完整模式）
 

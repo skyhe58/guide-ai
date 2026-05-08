@@ -144,7 +144,7 @@ df_wide = pd.concat([df_a, df_b], axis=1)           # 横向
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/00-prerequisites/pandas_basics/](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/pandas_basics/)
+> 💻 完整可运行代码：[code-examples/00-prerequisites/pandas_basics/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/pandas_basics/)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：pandas>=2.1
 

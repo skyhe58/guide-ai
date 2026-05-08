@@ -140,7 +140,7 @@ PE(pos, 2i+1) = cos(pos / 10000^(2i/d_model))
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-ml-basics/deep_learning/04_transformer_basics.py](https://github.com/your-repo/tree/main/code-examples/01-ml-basics/deep_learning/04_transformer_basics.py)
+> 💻 完整可运行代码：[code-examples/01-ml-basics/deep_learning/04_transformer_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/01-ml-basics/deep_learning/04_transformer_basics.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：torch>=2.1
 

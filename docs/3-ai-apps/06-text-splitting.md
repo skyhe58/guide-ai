@@ -180,7 +180,7 @@ graph LR
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-ai-apps/rag/02_text_splitting.py](https://github.com/your-repo/tree/main/code-examples/03-ai-apps/rag/02_text_splitting.py)
+> 💻 完整可运行代码：[code-examples/03-ai-apps/rag/02_text_splitting.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/03-ai-apps/rag/02_text_splitting.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：标准库（默认模式）
 

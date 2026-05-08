@@ -88,8 +88,8 @@ tokenizer.apply_chat_template(
 
 ## 代码示例
 
-> 💻 BPE 实现：[code-examples/02-llm/tokenizer/01_bpe_basics.py](https://github.com/your-repo/tree/main/code-examples/02-llm/tokenizer/01_bpe_basics.py)
-> 💻 HF Tokenizers：[code-examples/02-llm/tokenizer/02_hf_tokenizers.py](https://github.com/your-repo/tree/main/code-examples/02-llm/tokenizer/02_hf_tokenizers.py)
+> 💻 BPE 实现：[code-examples/02-llm/tokenizer/01_bpe_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/tokenizer/01_bpe_basics.py)
+> 💻 HF Tokenizers：[code-examples/02-llm/tokenizer/02_hf_tokenizers.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/tokenizer/02_hf_tokenizers.py)
 
 ## 实战要点
 

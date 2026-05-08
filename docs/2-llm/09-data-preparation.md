@@ -89,7 +89,7 @@ toolReferences:
 
 ## 代码示例
 
-> 💻 数据准备脚本：[code-examples/02-llm/finetuning/03_data_preparation.py](https://github.com/your-repo/tree/main/code-examples/02-llm/finetuning/03_data_preparation.py)
+> 💻 数据准备脚本：[code-examples/02-llm/finetuning/03_data_preparation.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/finetuning/03_data_preparation.py)
 
 ## 实战要点
 

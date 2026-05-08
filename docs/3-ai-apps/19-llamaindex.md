@@ -190,7 +190,7 @@ qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-ai-apps/frameworks/03_llamaindex_basics.py](https://github.com/your-repo/tree/main/code-examples/03-ai-apps/frameworks/03_llamaindex_basics.py)
+> 💻 完整可运行代码：[code-examples/03-ai-apps/frameworks/03_llamaindex_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/03-ai-apps/frameworks/03_llamaindex_basics.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：标准库（默认模式）
 

@@ -219,7 +219,7 @@ graph TB
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-ai-apps/rag/07_rag_optimization.py](https://github.com/your-repo/tree/main/code-examples/03-ai-apps/rag/07_rag_optimization.py)
+> 💻 完整可运行代码：[code-examples/03-ai-apps/rag/07_rag_optimization.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/03-ai-apps/rag/07_rag_optimization.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：numpy（默认模式）
 

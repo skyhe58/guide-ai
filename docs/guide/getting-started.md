@@ -13,7 +13,7 @@
 ## 克隆仓库
 
 ```bash
-git clone https://github.com/your-username/guide-ai.git
+git clone https://github.com/skyhe58/guide-ai.git
 cd guide-ai
 ```
 

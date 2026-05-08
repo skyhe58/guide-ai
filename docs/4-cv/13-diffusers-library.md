@@ -213,9 +213,9 @@ pipe = pipe.to(torch.float16)
 ## 代码示例
 
 > 💻 完整可运行代码：
-> - [code-examples/04-cv/diffusion/01_diffusers_basics.py](https://github.com/your-repo/tree/main/code-examples/04-cv/diffusion/01_diffusers_basics.py)
-> - [code-examples/04-cv/diffusion/02_stable_diffusion.py](https://github.com/your-repo/tree/main/code-examples/04-cv/diffusion/02_stable_diffusion.py)
-> - [code-examples/04-cv/diffusion/03_controlnet.py](https://github.com/your-repo/tree/main/code-examples/04-cv/diffusion/03_controlnet.py)
+> - [code-examples/04-cv/diffusion/01_diffusers_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/diffusion/01_diffusers_basics.py)
+> - [code-examples/04-cv/diffusion/02_stable_diffusion.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/diffusion/02_stable_diffusion.py)
+> - [code-examples/04-cv/diffusion/03_controlnet.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/diffusion/03_controlnet.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：diffusers>=0.25, transformers>=4.36（完整模式）
 

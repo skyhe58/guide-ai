@@ -88,7 +88,7 @@ Attention(Q, K, V) = softmax(Q @ K^T / √d_k + m · distance_matrix) @ V
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/02-llm/transformer/02_position_encoding.py](https://github.com/your-repo/tree/main/code-examples/02-llm/transformer/02_position_encoding.py)
+> 💻 完整可运行代码：[code-examples/02-llm/transformer/02_position_encoding.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/transformer/02_position_encoding.py)
 
 ```python
 # RoPE 频率预计算

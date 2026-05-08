@@ -161,7 +161,7 @@ graph TD
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-ml-basics/supervised_learning/](https://github.com/your-repo/tree/main/code-examples/01-ml-basics/supervised_learning/)
+> 💻 完整可运行代码：[code-examples/01-ml-basics/supervised_learning/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/01-ml-basics/supervised_learning/)
 
 每个算法的完整实现见对应代码文件：
 - `01_linear_regression.py` — 线性回归

@@ -85,7 +85,7 @@ response = client.chat.completions.create(
 
 ## 代码示例
 
-> 💻 部署代码：[code-examples/02-llm/deployment/](https://github.com/your-repo/tree/main/code-examples/02-llm/deployment/)
+> 💻 部署代码：[code-examples/02-llm/deployment/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/deployment/)
 
 ## 实战要点
 

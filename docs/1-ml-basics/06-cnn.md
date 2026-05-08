@@ -134,7 +134,7 @@ class ResidualBlock(nn.Module):
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-ml-basics/deep_learning/02_cnn_mnist.py](https://github.com/your-repo/tree/main/code-examples/01-ml-basics/deep_learning/02_cnn_mnist.py)
+> 💻 完整可运行代码：[code-examples/01-ml-basics/deep_learning/02_cnn_mnist.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/01-ml-basics/deep_learning/02_cnn_mnist.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：torch>=2.1, torchvision>=0.16
 

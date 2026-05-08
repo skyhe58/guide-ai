@@ -183,7 +183,7 @@ def cosine_schedule(T, s=0.008):
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-cv/diffusion/01_diffusers_basics.py](https://github.com/your-repo/tree/main/code-examples/04-cv/diffusion/01_diffusers_basics.py)
+> 💻 完整可运行代码：[code-examples/04-cv/diffusion/01_diffusers_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/diffusion/01_diffusers_basics.py)
 > 🐍 Python 版本：3.11+
 
 ## 实战要点

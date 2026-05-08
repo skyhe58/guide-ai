@@ -89,7 +89,7 @@ RLHF/DPO → TRL（Hugging Face 官方）
 
 ## 代码示例
 
-> 💻 Unsloth 示例：[code-examples/02-llm/finetuning/04_unsloth_finetune.py](https://github.com/your-repo/tree/main/code-examples/02-llm/finetuning/04_unsloth_finetune.py)
+> 💻 Unsloth 示例：[code-examples/02-llm/finetuning/04_unsloth_finetune.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/finetuning/04_unsloth_finetune.py)
 
 ## 实战要点
 

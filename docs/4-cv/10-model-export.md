@@ -190,7 +190,7 @@ results = benchmark(
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-cv/yolo/03_model_export.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/03_model_export.py)
+> 💻 完整可运行代码：[code-examples/04-cv/yolo/03_model_export.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/03_model_export.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：ultralytics>=8.0, onnxruntime>=1.16（完整模式）
 

@@ -82,7 +82,7 @@ response = client.chat.completions.create(
 
 ## 代码示例
 
-> 💻 vLLM 服务：[code-examples/02-llm/deployment/01_vllm_serve.py](https://github.com/your-repo/tree/main/code-examples/02-llm/deployment/01_vllm_serve.py)
+> 💻 vLLM 服务：[code-examples/02-llm/deployment/01_vllm_serve.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/deployment/01_vllm_serve.py)
 
 ## 实战要点
 

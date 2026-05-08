@@ -11,7 +11,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: GitHub
-      link: https://github.com/your-username/guide-ai
+      link: https://github.com/skyhe58/guide-ai
 
 features:
   - icon: 🚀

@@ -146,7 +146,7 @@ response = processor.decode(output[0], skip_special_tokens=True)
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-cv/multimodal/01_llava.py](https://github.com/your-repo/tree/main/code-examples/04-cv/multimodal/01_llava.py)
+> 💻 完整可运行代码：[code-examples/04-cv/multimodal/01_llava.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/multimodal/01_llava.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：transformers>=4.36（完整模式）
 

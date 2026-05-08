@@ -95,7 +95,7 @@ OLLAMA_HOST=0.0.0.0 ollama serve     # 允许远程访问
 
 ## 代码示例
 
-> 💻 Ollama API：[code-examples/02-llm/deployment/02_ollama_api.py](https://github.com/your-repo/tree/main/code-examples/02-llm/deployment/02_ollama_api.py)
+> 💻 Ollama API：[code-examples/02-llm/deployment/02_ollama_api.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/deployment/02_ollama_api.py)
 
 ## 实战要点
 

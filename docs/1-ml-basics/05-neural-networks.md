@@ -186,7 +186,7 @@ for epoch in range(10):
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-ml-basics/deep_learning/01_neural_network.py](https://github.com/your-repo/tree/main/code-examples/01-ml-basics/deep_learning/01_neural_network.py)
+> 💻 完整可运行代码：[code-examples/01-ml-basics/deep_learning/01_neural_network.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/01-ml-basics/deep_learning/01_neural_network.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：torch>=2.1
 

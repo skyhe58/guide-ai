@@ -159,7 +159,7 @@ def calculate_miou(pred, target, num_classes):
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-cv/yolo/01_detection.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/01_detection.py)
+> 💻 完整可运行代码：[code-examples/04-cv/yolo/01_detection.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/01_detection.py)
 > 🐍 Python 版本：3.11+
 
 ## 实战要点

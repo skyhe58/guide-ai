@@ -113,7 +113,7 @@ graph TB
 
 ## 代码示例
 
-> 💻 微调代码：[code-examples/02-llm/finetuning/](https://github.com/your-repo/tree/main/code-examples/02-llm/finetuning/)
+> 💻 微调代码：[code-examples/02-llm/finetuning/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/finetuning/)
 
 ## 实战要点
 

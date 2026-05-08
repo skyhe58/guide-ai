@@ -88,7 +88,7 @@ Flash Attention 通过 IO 感知的算法优化注意力计算：
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/02-llm/transformer/01_attention_mechanism.py](https://github.com/your-repo/tree/main/code-examples/02-llm/transformer/01_attention_mechanism.py)
+> 💻 完整可运行代码：[code-examples/02-llm/transformer/01_attention_mechanism.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/transformer/01_attention_mechanism.py)
 
 ```python
 # Scaled Dot-Product Attention

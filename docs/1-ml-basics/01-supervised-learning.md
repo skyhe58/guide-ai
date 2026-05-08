@@ -113,7 +113,7 @@ graph LR
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-ml-basics/supervised_learning/](https://github.com/your-repo/tree/main/code-examples/01-ml-basics/supervised_learning/)
+> 💻 完整可运行代码：[code-examples/01-ml-basics/supervised_learning/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/01-ml-basics/supervised_learning/)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：scikit-learn、torch、numpy、matplotlib
 

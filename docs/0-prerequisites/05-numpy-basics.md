@@ -148,7 +148,7 @@ def softmax(x: np.ndarray) -> np.ndarray:
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/00-prerequisites/numpy_basics/](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/numpy_basics/)
+> 💻 完整可运行代码：[code-examples/00-prerequisites/numpy_basics/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/numpy_basics/)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：numpy>=1.26
 

@@ -239,7 +239,7 @@ Pydantic 在 AI 应用中的典型用途：
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/00-prerequisites/type_annotations/](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/type_annotations/)
+> 💻 完整可运行代码：[code-examples/00-prerequisites/type_annotations/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/type_annotations/)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：pydantic>=2.5
 

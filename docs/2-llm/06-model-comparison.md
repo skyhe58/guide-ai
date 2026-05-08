@@ -97,7 +97,7 @@ graph TD
 
 ## 代码示例
 
-> 💻 多模型评测脚本：[code-examples/02-llm/milestone_projects/model_comparison/benchmark.py](https://github.com/your-repo/tree/main/code-examples/02-llm/milestone_projects/model_comparison/benchmark.py)
+> 💻 多模型评测脚本：[code-examples/02-llm/milestone_projects/model_comparison/benchmark.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/milestone_projects/model_comparison/benchmark.py)
 
 ## 实战要点
 

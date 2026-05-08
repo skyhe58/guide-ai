@@ -90,8 +90,8 @@ LoraConfig(
 
 ## 代码示例
 
-> 💻 LoRA 实现：[code-examples/02-llm/finetuning/01_lora_example.py](https://github.com/your-repo/tree/main/code-examples/02-llm/finetuning/01_lora_example.py)
-> 💻 QLoRA 示例：[code-examples/02-llm/finetuning/02_qlora_example.py](https://github.com/your-repo/tree/main/code-examples/02-llm/finetuning/02_qlora_example.py)
+> 💻 LoRA 实现：[code-examples/02-llm/finetuning/01_lora_example.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/finetuning/01_lora_example.py)
+> 💻 QLoRA 示例：[code-examples/02-llm/finetuning/02_qlora_example.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/finetuning/02_qlora_example.py)
 
 ## 实战要点
 

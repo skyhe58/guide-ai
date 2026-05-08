@@ -18,51 +18,51 @@ description: "图像基础、目标检测、图像生成、多模态和语义分
 
 | 序号 | 知识点 | 难度 | 代码示例 |
 |------|--------|------|---------|
-| 01 | [OpenCV 基础](/4-cv/01-opencv-basics) | ⭐ | [01_image_basics.py](https://github.com/your-repo/tree/main/code-examples/04-cv/opencv/01_image_basics.py) |
-| 02 | [图像处理](/4-cv/02-image-processing) | ⭐⭐ | [02_image_processing.py](https://github.com/your-repo/tree/main/code-examples/04-cv/opencv/02_image_processing.py) |
-| 03 | [颜色空间](/4-cv/03-color-spaces) | ⭐⭐ | [01_image_basics.py](https://github.com/your-repo/tree/main/code-examples/04-cv/opencv/01_image_basics.py) |
-| 04 | [图像变换](/4-cv/04-image-transforms) | ⭐⭐ | [01_image_basics.py](https://github.com/your-repo/tree/main/code-examples/04-cv/opencv/01_image_basics.py) |
-| 05 | [视频处理](/4-cv/05-video-processing) | ⭐⭐ | [03_video_processing.py](https://github.com/your-repo/tree/main/code-examples/04-cv/opencv/03_video_processing.py) |
+| 01 | [OpenCV 基础](/4-cv/01-opencv-basics) | ⭐ | [01_image_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/opencv/01_image_basics.py) |
+| 02 | [图像处理](/4-cv/02-image-processing) | ⭐⭐ | [02_image_processing.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/opencv/02_image_processing.py) |
+| 03 | [颜色空间](/4-cv/03-color-spaces) | ⭐⭐ | [01_image_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/opencv/01_image_basics.py) |
+| 04 | [图像变换](/4-cv/04-image-transforms) | ⭐⭐ | [01_image_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/opencv/01_image_basics.py) |
+| 05 | [视频处理](/4-cv/05-video-processing) | ⭐⭐ | [03_video_processing.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/opencv/03_video_processing.py) |
 
 ### 目标检测（YOLO）
 
 | 序号 | 知识点 | 难度 | 代码示例 |
 |------|--------|------|---------|
-| 06 | [YOLO 目标检测](/4-cv/06-yolo-detection) | ⭐⭐ | [01_detection.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/01_detection.py) |
-| 07 | [模型训练](/4-cv/07-model-training) | ⭐⭐⭐ | [02_custom_training.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/02_custom_training.py) |
-| 08 | [模型微调](/4-cv/08-model-finetuning) | ⭐⭐⭐ | [02_custom_training.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/02_custom_training.py) |
-| 09 | [模型评估](/4-cv/09-model-evaluation) | ⭐⭐⭐ | [01_detection.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/01_detection.py) |
-| 10 | [模型导出](/4-cv/10-model-export) | ⭐⭐⭐ | [03_model_export.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/03_model_export.py) |
+| 06 | [YOLO 目标检测](/4-cv/06-yolo-detection) | ⭐⭐ | [01_detection.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/01_detection.py) |
+| 07 | [模型训练](/4-cv/07-model-training) | ⭐⭐⭐ | [02_custom_training.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/02_custom_training.py) |
+| 08 | [模型微调](/4-cv/08-model-finetuning) | ⭐⭐⭐ | [02_custom_training.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/02_custom_training.py) |
+| 09 | [模型评估](/4-cv/09-model-evaluation) | ⭐⭐⭐ | [01_detection.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/01_detection.py) |
+| 10 | [模型导出](/4-cv/10-model-export) | ⭐⭐⭐ | [03_model_export.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/03_model_export.py) |
 
 ### 图像生成（Diffusion）
 
 | 序号 | 知识点 | 难度 | 代码示例 |
 |------|--------|------|---------|
-| 11 | [Diffusion Model 原理](/4-cv/11-diffusion-model) | ⭐⭐⭐⭐ | [01_diffusers_basics.py](https://github.com/your-repo/tree/main/code-examples/04-cv/diffusion/01_diffusers_basics.py) |
-| 12 | [Stable Diffusion](/4-cv/12-stable-diffusion) | ⭐⭐⭐⭐ | [02_stable_diffusion.py](https://github.com/your-repo/tree/main/code-examples/04-cv/diffusion/02_stable_diffusion.py) |
-| 13 | [Diffusers 库](/4-cv/13-diffusers-library) | ⭐⭐⭐ | [03_controlnet.py](https://github.com/your-repo/tree/main/code-examples/04-cv/diffusion/03_controlnet.py) |
+| 11 | [Diffusion Model 原理](/4-cv/11-diffusion-model) | ⭐⭐⭐⭐ | [01_diffusers_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/diffusion/01_diffusers_basics.py) |
+| 12 | [Stable Diffusion](/4-cv/12-stable-diffusion) | ⭐⭐⭐⭐ | [02_stable_diffusion.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/diffusion/02_stable_diffusion.py) |
+| 13 | [Diffusers 库](/4-cv/13-diffusers-library) | ⭐⭐⭐ | [03_controlnet.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/diffusion/03_controlnet.py) |
 
 ### 多模态
 
 | 序号 | 知识点 | 难度 | 代码示例 |
 |------|--------|------|---------|
-| 14 | [LLaVA 多模态](/4-cv/14-llava-multimodal) | ⭐⭐⭐⭐ | [01_llava.py](https://github.com/your-repo/tree/main/code-examples/04-cv/multimodal/01_llava.py) |
-| 15 | [视觉-语言模型](/4-cv/15-vision-language) | ⭐⭐⭐⭐ | [02_vision_language.py](https://github.com/your-repo/tree/main/code-examples/04-cv/multimodal/02_vision_language.py) |
+| 14 | [LLaVA 多模态](/4-cv/14-llava-multimodal) | ⭐⭐⭐⭐ | [01_llava.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/multimodal/01_llava.py) |
+| 15 | [视觉-语言模型](/4-cv/15-vision-language) | ⭐⭐⭐⭐ | [02_vision_language.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/multimodal/02_vision_language.py) |
 
 ### 语义分割
 
 | 序号 | 知识点 | 难度 | 代码示例 |
 |------|--------|------|---------|
-| 16 | [语义分割](/4-cv/16-semantic-segmentation) | ⭐⭐⭐ | [01_detection.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/01_detection.py) |
-| 17 | [Segment Anything (SAM)](/4-cv/17-sam) | ⭐⭐⭐⭐ | [01_detection.py](https://github.com/your-repo/tree/main/code-examples/04-cv/yolo/01_detection.py) |
+| 16 | [语义分割](/4-cv/16-semantic-segmentation) | ⭐⭐⭐ | [01_detection.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/01_detection.py) |
+| 17 | [Segment Anything (SAM)](/4-cv/17-sam) | ⭐⭐⭐⭐ | [01_detection.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/yolo/01_detection.py) |
 
 ## 里程碑项目
 
 | 项目 | 说明 | 代码 |
 |------|------|------|
-| 🎯 YOLO 实时检测 API | 自定义训练→模型导出→FastAPI 服务 | [yolo_api/](https://github.com/your-repo/tree/main/code-examples/04-cv/milestone_projects/yolo_api/) |
-| 🖼️ 多模态应用 | LLaVA/Qwen-VL 图文理解 + API 服务 | [multimodal_app/](https://github.com/your-repo/tree/main/code-examples/04-cv/milestone_projects/multimodal_app/) |
-| 🎨 Diffusion 图像生成 | Stable Diffusion + ControlNet 条件生成 | [diffusion_demo/](https://github.com/your-repo/tree/main/code-examples/04-cv/milestone_projects/diffusion_demo/) |
+| 🎯 YOLO 实时检测 API | 自定义训练→模型导出→FastAPI 服务 | [yolo_api/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/milestone_projects/yolo_api/) |
+| 🖼️ 多模态应用 | LLaVA/Qwen-VL 图文理解 + API 服务 | [multimodal_app/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/milestone_projects/multimodal_app/) |
+| 🎨 Diffusion 图像生成 | Stable Diffusion + ControlNet 条件生成 | [diffusion_demo/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/milestone_projects/diffusion_demo/) |
 
 ## 辅助资料
 

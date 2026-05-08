@@ -85,7 +85,7 @@ L(C) ∝ C^(-0.050)    # C: 计算量（FLOPs）
 
 ## 代码示例
 
-> 💻 相关代码：[code-examples/02-llm/transformer/](https://github.com/your-repo/tree/main/code-examples/02-llm/transformer/)
+> 💻 相关代码：[code-examples/02-llm/transformer/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/transformer/)
 
 ## 实战要点
 

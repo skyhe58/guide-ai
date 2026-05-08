@@ -186,7 +186,7 @@ LangGraph 支持将图的执行状态持久化，实现：
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-ai-apps/frameworks/02_langgraph_workflow.py](https://github.com/your-repo/tree/main/code-examples/03-ai-apps/frameworks/02_langgraph_workflow.py)
+> 💻 完整可运行代码：[code-examples/03-ai-apps/frameworks/02_langgraph_workflow.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/03-ai-apps/frameworks/02_langgraph_workflow.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：标准库（默认模式）
 

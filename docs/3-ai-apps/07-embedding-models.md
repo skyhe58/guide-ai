@@ -141,7 +141,7 @@ Embedding 模型通常基于对比学习（Contrastive Learning）训练：
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-ai-apps/rag/03_embedding.py](https://github.com/your-repo/tree/main/code-examples/03-ai-apps/rag/03_embedding.py)
+> 💻 完整可运行代码：[code-examples/03-ai-apps/rag/03_embedding.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/03-ai-apps/rag/03_embedding.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：numpy（默认模式）、sentence-transformers（本地模型模式）
 

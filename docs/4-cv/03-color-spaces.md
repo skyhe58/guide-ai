@@ -169,7 +169,7 @@ enhanced = clahe.apply(gray)
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-cv/opencv/01_image_basics.py](https://github.com/your-repo/tree/main/code-examples/04-cv/opencv/01_image_basics.py)
+> 💻 完整可运行代码：[code-examples/04-cv/opencv/01_image_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/opencv/01_image_basics.py)
 > 🐍 Python 版本：3.11+
 
 ## 实战要点

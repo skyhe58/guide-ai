@@ -146,7 +146,7 @@ merged = cv2.merge([b, g, r])
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/04-cv/opencv/01_image_basics.py](https://github.com/your-repo/tree/main/code-examples/04-cv/opencv/01_image_basics.py)
+> 💻 完整可运行代码：[code-examples/04-cv/opencv/01_image_basics.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/04-cv/opencv/01_image_basics.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：numpy（模拟模式）、opencv-python>=4.8（完整模式）
 

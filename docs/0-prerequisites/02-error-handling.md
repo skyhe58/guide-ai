@@ -229,7 +229,7 @@ finally:
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/00-prerequisites/error_handling/](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/error_handling/)
+> 💻 完整可运行代码：[code-examples/00-prerequisites/error_handling/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/error_handling/)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：标准库
 

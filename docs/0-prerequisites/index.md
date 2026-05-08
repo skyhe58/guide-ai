@@ -16,17 +16,17 @@ title: "模块 0：前提准备"
 
 | 序号 | 知识点 | 难度 | 面试频率 | 代码示例 |
 |:----:|--------|:----:|:--------:|:--------:|
-| 01 | [异步编程](/0-prerequisites/01-async-programming) | ⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/async_programming/) |
-| 02 | [错误处理](/0-prerequisites/02-error-handling) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/error_handling/) |
-| 03 | [类型注解](/0-prerequisites/03-type-annotations) | ⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/type_annotations/) |
+| 01 | [异步编程](/0-prerequisites/01-async-programming) | ⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/async_programming/) |
+| 02 | [错误处理](/0-prerequisites/02-error-handling) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/error_handling/) |
+| 03 | [类型注解](/0-prerequisites/03-type-annotations) | ⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/type_annotations/) |
 | 04 | [包管理](/0-prerequisites/04-package-management) | ⭐ | 🔥🔥 | — |
 
 ### 数据工具
 
 | 序号 | 知识点 | 难度 | 面试频率 | 代码示例 |
 |:----:|--------|:----:|:--------:|:--------:|
-| 05 | [NumPy 基础](/0-prerequisites/05-numpy-basics) | ⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/numpy_basics/) |
-| 06 | [Pandas 基础](/0-prerequisites/06-pandas-basics) | ⭐ | 🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/pandas_basics/) |
+| 05 | [NumPy 基础](/0-prerequisites/05-numpy-basics) | ⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/numpy_basics/) |
+| 06 | [Pandas 基础](/0-prerequisites/06-pandas-basics) | ⭐ | 🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/pandas_basics/) |
 
 ### 开发环境
 
@@ -42,7 +42,7 @@ title: "模块 0：前提准备"
 
 **CSV 数据处理脚本 + FastAPI 服务** — 整合异步编程、类型注解、NumPy、Pandas、FastAPI
 
-→ [代码](https://github.com/your-repo/tree/main/code-examples/00-prerequisites/milestone_project/)
+→ [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/00-prerequisites/milestone_project/)
 
 ## 快速链接
 

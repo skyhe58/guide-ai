@@ -71,7 +71,7 @@ Hugging Face 模型 → convert_hf_to_gguf.py → GGUF (F16)
 
 ## 代码示例
 
-> 💻 GGUF 转换：[code-examples/02-llm/deployment/03_gguf_convert.py](https://github.com/your-repo/tree/main/code-examples/02-llm/deployment/03_gguf_convert.py)
+> 💻 GGUF 转换：[code-examples/02-llm/deployment/03_gguf_convert.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/deployment/03_gguf_convert.py)
 
 ## 实战要点
 

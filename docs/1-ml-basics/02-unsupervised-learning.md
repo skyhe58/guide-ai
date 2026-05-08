@@ -113,7 +113,7 @@ PCA 的应用场景：
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/01-ml-basics/unsupervised_learning/](https://github.com/your-repo/tree/main/code-examples/01-ml-basics/unsupervised_learning/)
+> 💻 完整可运行代码：[code-examples/01-ml-basics/unsupervised_learning/](https://github.com/skyhe58/guide-ai/tree/main/code-examples/01-ml-basics/unsupervised_learning/)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：scikit-learn、numpy、matplotlib
 

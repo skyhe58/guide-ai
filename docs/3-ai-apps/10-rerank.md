@@ -161,7 +161,7 @@ rerank_prompt = """给定查询和文档，判断文档与查询的相关性。
 
 ## 代码示例
 
-> 💻 完整可运行代码：[code-examples/03-ai-apps/rag/06_rerank.py](https://github.com/your-repo/tree/main/code-examples/03-ai-apps/rag/06_rerank.py)
+> 💻 完整可运行代码：[code-examples/03-ai-apps/rag/06_rerank.py](https://github.com/skyhe58/guide-ai/tree/main/code-examples/03-ai-apps/rag/06_rerank.py)
 > 🐍 Python 版本：3.11+
 > 📦 依赖：numpy（默认模式）、sentence-transformers（本地模型模式）
 

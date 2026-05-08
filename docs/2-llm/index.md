@@ -16,36 +16,36 @@ title: "模块 2：大语言模型 LLM"
 
 | 序号 | 知识点 | 难度 | 面试频率 | 代码示例 |
 |:----:|--------|:----:|:--------:|:--------:|
-| 01 | [Transformer 架构详解](/2-llm/01-transformer-deep-dive) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/transformer/) |
-| 02 | [注意力机制深入](/2-llm/02-attention-mechanism) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/transformer/01_attention_mechanism.py) |
-| 03 | [位置编码](/2-llm/03-position-encoding) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/transformer/02_position_encoding.py) |
+| 01 | [Transformer 架构详解](/2-llm/01-transformer-deep-dive) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/transformer/) |
+| 02 | [注意力机制深入](/2-llm/02-attention-mechanism) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/transformer/01_attention_mechanism.py) |
+| 03 | [位置编码](/2-llm/03-position-encoding) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/transformer/02_position_encoding.py) |
 | 04 | [训练流程](/2-llm/04-training-pipeline) | ⭐⭐⭐ | 🔥🔥🔥 | — |
 | 05 | [Scaling Laws](/2-llm/05-scaling-laws) | ⭐⭐⭐ | 🔥🔥 | — |
-| 06 | [主流模型对比](/2-llm/06-model-comparison) | ⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/milestone_projects/model_comparison/) |
+| 06 | [主流模型对比](/2-llm/06-model-comparison) | ⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/milestone_projects/model_comparison/) |
 
 ### 微调技术
 
 | 序号 | 知识点 | 难度 | 面试频率 | 代码示例 |
 |:----:|--------|:----:|:--------:|:--------:|
-| 07 | [LoRA/QLoRA 微调](/2-llm/07-lora-qlora) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/finetuning/) |
+| 07 | [LoRA/QLoRA 微调](/2-llm/07-lora-qlora) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/finetuning/) |
 | 08 | [全参数微调](/2-llm/08-full-finetuning) | ⭐⭐⭐ | 🔥🔥 | — |
-| 09 | [微调数据准备](/2-llm/09-data-preparation) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/finetuning/03_data_preparation.py) |
-| 10 | [微调工具](/2-llm/10-finetuning-tools) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/finetuning/04_unsloth_finetune.py) |
+| 09 | [微调数据准备](/2-llm/09-data-preparation) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/finetuning/03_data_preparation.py) |
+| 10 | [微调工具](/2-llm/10-finetuning-tools) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/finetuning/04_unsloth_finetune.py) |
 
 ### 量化与部署
 
 | 序号 | 知识点 | 难度 | 面试频率 | 代码示例 |
 |:----:|--------|:----:|:--------:|:--------:|
-| 11 | [量化与 GGUF](/2-llm/11-quantization-gguf) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/deployment/03_gguf_convert.py) |
-| 12 | [vLLM 推理加速](/2-llm/12-vllm-deployment) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/deployment/01_vllm_serve.py) |
-| 13 | [Ollama 本地部署](/2-llm/13-ollama-local) | ⭐ | 🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/deployment/02_ollama_api.py) |
+| 11 | [量化与 GGUF](/2-llm/11-quantization-gguf) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/deployment/03_gguf_convert.py) |
+| 12 | [vLLM 推理加速](/2-llm/12-vllm-deployment) | ⭐⭐⭐ | 🔥🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/deployment/01_vllm_serve.py) |
+| 13 | [Ollama 本地部署](/2-llm/13-ollama-local) | ⭐ | 🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/deployment/02_ollama_api.py) |
 | 14 | [TGI 推理服务](/2-llm/14-tgi-deployment) | ⭐⭐ | 🔥 | — |
 
 ### Tokenizer
 
 | 序号 | 知识点 | 难度 | 面试频率 | 代码示例 |
 |:----:|--------|:----:|:--------:|:--------:|
-| 15 | [Tokenizer](/2-llm/15-tokenizer) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/tokenizer/) |
+| 15 | [Tokenizer](/2-llm/15-tokenizer) | ⭐⭐ | 🔥🔥 | [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/tokenizer/) |
 
 ## 里程碑项目
 
@@ -54,12 +54,12 @@ title: "模块 2：大语言模型 LLM"
 ### 项目 1：多模型对比评测
 本地部署 Qwen2-7B，编写多模型对比评测脚本，对比延迟、吞吐量和回答质量。
 
-→ [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/milestone_projects/model_comparison/)
+→ [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/milestone_projects/model_comparison/)
 
 ### 项目 2：领域微调 + 部署
 使用 LoRA/QLoRA 微调 Qwen2-7B，导出 GGUF，部署为 API 服务。
 
-→ [代码](https://github.com/your-repo/tree/main/code-examples/02-llm/milestone_projects/domain_finetune/)
+→ [代码](https://github.com/skyhe58/guide-ai/tree/main/code-examples/02-llm/milestone_projects/domain_finetune/)
 
 ## 快速链接
 
