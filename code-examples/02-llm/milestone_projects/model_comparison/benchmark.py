@@ -16,10 +16,8 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import json
 import time
-from dataclasses import dataclass, field
-
+from dataclasses import dataclass
 
 # ============================================================
 # 1. 评测配置

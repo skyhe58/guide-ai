@@ -25,7 +25,6 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
-
 # ============================================================
 # 1. 向量运算工具（纯 Python 实现，无需 numpy）
 # ============================================================

@@ -15,14 +15,11 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import math
 import random
 import time
 from collections import defaultdict
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
-from typing import Any
-
 
 # ============================================================
 # 1. Prometheus 指标类型模拟
@@ -53,7 +50,7 @@ class Counter:
         self.label_names = label_names or []
         self._values: dict[tuple, float] = defaultdict(float)
 
-    def labels(self, **kwargs: str) -> "Counter":
+    def labels(self, **kwargs: str) -> Counter:
         """设置标签"""
         self._current_labels = tuple(sorted(kwargs.items()))
         return self
@@ -90,7 +87,7 @@ class Gauge:
         self.label_names = label_names or []
         self._values: dict[tuple, float] = defaultdict(float)
 
-    def labels(self, **kwargs: str) -> "Gauge":
+    def labels(self, **kwargs: str) -> Gauge:
         self._current_labels = tuple(sorted(kwargs.items()))
         return self
 
@@ -129,7 +126,7 @@ class Histogram:
         self.buckets = buckets or [0.01, 0.05, 0.1, 0.5, 1, 2, 5, 10, 30, 60]
         self._observations: dict[tuple, list[float]] = defaultdict(list)
 
-    def labels(self, **kwargs: str) -> "Histogram":
+    def labels(self, **kwargs: str) -> Histogram:
         self._current_labels = tuple(sorted(kwargs.items()))
         return self
 

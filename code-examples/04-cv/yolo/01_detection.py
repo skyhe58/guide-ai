@@ -18,12 +18,10 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import json
 import time
-import numpy as np
 from dataclasses import dataclass, field
-from typing import Any
 
+import numpy as np
 
 # ============================================================
 # 1. COCO 类别定义

@@ -11,11 +11,10 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import numpy as np
 from sklearn.datasets import make_classification
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
+from sklearn.model_selection import train_test_split
 
 
 def demo_binary_classification() -> None:

@@ -22,14 +22,14 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import json
 import time
 import uuid
-import numpy as np
+from collections.abc import Generator
 from dataclasses import dataclass, field
-from typing import Any, Generator
 from enum import Enum
+from typing import Any
 
+import numpy as np
 
 # ============================================================
 # 1. 数据模型

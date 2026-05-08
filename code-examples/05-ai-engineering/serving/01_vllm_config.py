@@ -17,13 +17,11 @@ from __future__ import annotations
 
 import hashlib
 import json
-import math
 import random
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
 from typing import Any
-
 
 # ============================================================
 # 1. vLLM 配置数据结构

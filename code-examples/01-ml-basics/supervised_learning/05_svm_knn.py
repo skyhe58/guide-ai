@@ -11,13 +11,12 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import numpy as np
 from sklearn.datasets import make_classification
-from sklearn.svm import SVC
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
 
 
 def demo_svm_knn_comparison() -> None:

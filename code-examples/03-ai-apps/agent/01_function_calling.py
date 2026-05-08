@@ -18,13 +18,12 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import json
-import random
 import sys
 import uuid
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, Callable
-
+from typing import Any
 
 # ============================================================
 # 1. 工具定义 — JSON Schema 格式

@@ -18,12 +18,10 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import sys
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any
 
 import numpy as np
-
 
 # ============================================================
 # 1. 模拟图像类 — 用 NumPy 数组表示图像

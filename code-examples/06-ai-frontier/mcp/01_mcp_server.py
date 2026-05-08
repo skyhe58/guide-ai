@@ -18,12 +18,10 @@ import asyncio
 import json
 import logging
 import sys
-import uuid
+from collections.abc import Callable
 from dataclasses import dataclass, field
-from datetime import datetime
 from enum import Enum
-from typing import Any, Callable, Optional
-
+from typing import Any
 
 # ============================================================
 # 1. MCP 协议常量和数据结构
@@ -87,11 +85,11 @@ class ServerCapabilities:
 class MCPMessage:
     """MCP 消息封装"""
     jsonrpc: str = JSONRPC_VERSION
-    id: Optional[int] = None
-    method: Optional[str] = None
-    params: Optional[dict] = None
-    result: Optional[Any] = None
-    error: Optional[dict] = None
+    id: int | None = None
+    method: str | None = None
+    params: dict | None = None
+    result: Any | None = None
+    error: dict | None = None
 
 
 # ============================================================
@@ -110,7 +108,7 @@ class JSONRPCHandler:
         self._routes[method] = handler
         logging.debug(f"注册方法: {method}")
 
-    async def handle_message(self, raw_message: str) -> Optional[str]:
+    async def handle_message(self, raw_message: str) -> str | None:
         """处理原始 JSON-RPC 消息"""
         try:
             # 解析 JSON
@@ -166,7 +164,7 @@ class JSONRPCHandler:
         }
         return json.dumps(response, ensure_ascii=False)
 
-    def _error_response(self, msg_id: Optional[int],
+    def _error_response(self, msg_id: int | None,
                         code: MCPErrorCode, message: str) -> str:
         """构建错误响应"""
         response = {
@@ -211,7 +209,7 @@ class MCPServer:
 
         # 会话状态
         self._initialized = False
-        self._client_info: Optional[dict] = None
+        self._client_info: dict | None = None
 
         # 日志配置（输出到 stderr，避免干扰 stdio 传输）
         logging.basicConfig(
@@ -476,7 +474,7 @@ class MCPServer:
 
     # ---- 运行方法 ----
 
-    async def process_message(self, raw_message: str) -> Optional[str]:
+    async def process_message(self, raw_message: str) -> str | None:
         """处理单条消息（用于测试和模拟）"""
         return await self._rpc.handle_message(raw_message)
 

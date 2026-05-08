@@ -17,7 +17,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-
 # ============================================================
 # 1. 正弦位置编码（Sinusoidal Positional Encoding）
 # ============================================================

@@ -13,15 +13,11 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import hashlib
-import json
 import math
-import os
 import re
-import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import Any
-
 
 # ============================================================
 # 1. Document 与 Node — 数据抽象
@@ -164,11 +160,11 @@ class BaseIndex(ABC):
     def query(self, query_str: str, top_k: int = 3) -> list[tuple[TextNode, float]]:
         """查询索引，返回 (节点, 分数) 列表。"""
 
-    def as_query_engine(self, **kwargs) -> "QueryEngine":
+    def as_query_engine(self, **kwargs) -> QueryEngine:
         """转换为查询引擎。"""
         return QueryEngine(self, **kwargs)
 
-    def as_chat_engine(self, **kwargs) -> "ChatEngine":
+    def as_chat_engine(self, **kwargs) -> ChatEngine:
         """转换为对话引擎。"""
         return ChatEngine(self, **kwargs)
 
@@ -185,7 +181,7 @@ class VectorStoreIndex(BaseIndex):
                 node.embedding = self.embed_model.get_text_embedding(node.text)
 
     @classmethod
-    def from_documents(cls, documents: list[Document], **kwargs) -> "VectorStoreIndex":
+    def from_documents(cls, documents: list[Document], **kwargs) -> VectorStoreIndex:
         """从文档列表创建向量索引。"""
         splitter = SentenceSplitter()
         nodes = splitter.get_nodes_from_documents(documents)
@@ -276,7 +272,7 @@ class QueryEngine:
         self.index = index
         self.response_mode = response_mode
 
-    def query(self, query_str: str) -> "QueryResponse":
+    def query(self, query_str: str) -> QueryResponse:
         """执行查询。"""
         # 检索相关节点
         results = self.index.query(query_str, top_k=3)

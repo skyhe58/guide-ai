@@ -13,7 +13,6 @@ from __future__ import annotations
 
 import numpy as np
 
-
 # ============================================================
 # 1. scikit-learn 线性回归
 # ============================================================
@@ -25,8 +24,8 @@ def demo_sklearn_linear_regression() -> None:
     print("=" * 60)
 
     from sklearn.linear_model import LinearRegression
-    from sklearn.model_selection import train_test_split
     from sklearn.metrics import mean_squared_error, r2_score
+    from sklearn.model_selection import train_test_split
 
     # 生成模拟数据：y = 2*x1 - 1*x2 + 0.5*x3 + 噪声
     np.random.seed(42)

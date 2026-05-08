@@ -18,12 +18,11 @@ import numpy as np
 import torch
 import torch.nn as nn
 from sklearn.datasets import fetch_20newsgroups
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, f1_score, classification_report
-
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report, f1_score
+from sklearn.model_selection import train_test_split
 
 # ============================================================
 # 1. 数据准备（模拟垃圾邮件：用 20newsgroups 的 2 个类别）
@@ -35,12 +34,12 @@ def load_data():
     # 用 20newsgroups 的 2 个类别模拟垃圾邮件检测
     categories = ["rec.sport.baseball", "sci.space"]
     data = fetch_20newsgroups(subset="all", categories=categories, remove=("headers", "footers"))
-    
+
     # TF-IDF 特征提取
     vectorizer = TfidfVectorizer(max_features=5000, stop_words="english")
     X = vectorizer.fit_transform(data.data).toarray().astype(np.float32)
     y = data.target
-    
+
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
     print(f"  训练集: {X_train.shape}, 测试集: {X_test.shape}")
     print(f"  类别: {categories}")

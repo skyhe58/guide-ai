@@ -6,10 +6,12 @@ Python 版本：3.11+
 最后验证：2024-12-01
 """
 from __future__ import annotations
+
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
+
 
 class MNISTNet(nn.Module):
     def __init__(self):

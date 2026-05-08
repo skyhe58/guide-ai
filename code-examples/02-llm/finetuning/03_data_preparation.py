@@ -14,9 +14,8 @@ from __future__ import annotations
 import csv
 import io
 import json
-from dataclasses import dataclass, field, asdict
+from dataclasses import asdict, dataclass, field
 from typing import Literal
-
 
 # ============================================================
 # 1. 数据格式定义

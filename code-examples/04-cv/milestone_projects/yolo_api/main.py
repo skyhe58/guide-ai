@@ -24,11 +24,10 @@ from __future__ import annotations
 import json
 import time
 import uuid
-import numpy as np
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any
-from enum import Enum
 
+import numpy as np
 
 # ============================================================
 # 1. 数据模型（Pydantic 风格）

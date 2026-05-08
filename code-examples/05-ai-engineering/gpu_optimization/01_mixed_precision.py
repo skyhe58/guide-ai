@@ -13,11 +13,8 @@ from __future__ import annotations
 
 import math
 import random
-import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
-from typing import Any
-
 
 # ============================================================
 # 1. 数值精度模拟
@@ -77,7 +74,7 @@ class SimTensor:
         spec = PRECISION_SPECS[self.precision]
         return self.size * int(spec.bytes_per_param)
 
-    def cast(self, target: Precision) -> "SimTensor":
+    def cast(self, target: Precision) -> SimTensor:
         """精度转换"""
         spec = PRECISION_SPECS[target]
         new_data = []

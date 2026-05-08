@@ -15,14 +15,11 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import hashlib
-import json
 import re
 import time
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Optional
-
 
 # ============================================================
 # 1. 安全等级和检测结果定义
@@ -360,7 +357,7 @@ class SecurityPipeline:
         self._blocked_count = 0
         self._total_count = 0
 
-    def process_input(self, user_input: str) -> tuple[Optional[str], DetectionResult]:
+    def process_input(self, user_input: str) -> tuple[str | None, DetectionResult]:
         """
         处理用户输入
 

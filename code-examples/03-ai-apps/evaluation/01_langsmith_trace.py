@@ -16,10 +16,10 @@ import random
 import statistics
 import time
 import uuid
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, Callable
-
+from typing import Any
 
 # ============================================================
 # 1. Run — 单次执行记录

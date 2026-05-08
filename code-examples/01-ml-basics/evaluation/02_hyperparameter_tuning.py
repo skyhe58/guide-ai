@@ -6,10 +6,11 @@ Python 版本：3.11+
 最后验证：2024-12-01
 """
 from __future__ import annotations
-import numpy as np
+
 from sklearn.datasets import make_classification
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV, cross_val_score
+
 
 def demo_grid_search() -> None:
     """Grid Search 网格搜索。"""

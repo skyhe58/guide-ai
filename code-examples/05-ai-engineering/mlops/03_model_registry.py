@@ -16,13 +16,11 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import hashlib
-import json
 import time
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
 from typing import Any
-
 
 # ============================================================
 # 1. 模型版本管理核心数据结构

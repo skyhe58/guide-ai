@@ -13,8 +13,8 @@ from __future__ import annotations
 
 import numpy as np
 from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
 from sklearn.datasets import make_blobs
+from sklearn.metrics import silhouette_score
 
 
 def demo_kmeans_basic() -> None:

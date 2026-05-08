@@ -11,6 +11,7 @@ Python 版本：3.11+
   3. 访问文档：http://localhost:8000/docs
 """
 from __future__ import annotations
+
 import numpy as np
 import torch
 from fastapi import FastAPI, HTTPException

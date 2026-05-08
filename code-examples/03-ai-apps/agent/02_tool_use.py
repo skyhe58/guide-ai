@@ -17,17 +17,17 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import sys
 import time
-import hashlib
 from abc import ABC, abstractmethod
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Any, Callable
-
+from typing import Any
 
 # ============================================================
 # 1. 工具基类与接口定义

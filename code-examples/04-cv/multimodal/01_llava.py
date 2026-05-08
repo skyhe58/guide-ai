@@ -20,13 +20,10 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import json
 import time
-import numpy as np
-from dataclasses import dataclass, field
-from typing import Any
-from enum import Enum
+from dataclasses import dataclass
 
+import numpy as np
 
 # ============================================================
 # 1. LLaVA 架构组件

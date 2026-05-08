@@ -18,13 +18,11 @@ from __future__ import annotations
 
 import asyncio
 import io
-import json
 from typing import Literal
 
 import numpy as np
 import pandas as pd
 from pydantic import BaseModel, Field, field_validator
-
 
 # ============================================================
 # 1. Pydantic 数据模型（类型注解 + 数据验证）

@@ -6,11 +6,12 @@ Python 版本：3.11+
 最后验证：2024-12-01
 """
 from __future__ import annotations
-import numpy as np
+
 from sklearn.datasets import make_classification
-from sklearn.model_selection import cross_val_score, StratifiedKFold, learning_curve
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import StratifiedKFold, cross_val_score, learning_curve
+
 
 def demo_cross_validation() -> None:
     """交叉验证演示。"""

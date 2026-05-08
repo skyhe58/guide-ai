@@ -11,14 +11,11 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import hashlib
 import random
 import time
 from collections import defaultdict
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any
-
 
 # ============================================================
 # 1. 后端实例数据结构

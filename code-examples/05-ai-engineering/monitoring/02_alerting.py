@@ -11,14 +11,11 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import random
 import time
 from collections import defaultdict
+from collections.abc import Callable
 from dataclasses import dataclass, field
-from datetime import datetime
 from enum import Enum
-from typing import Any, Callable
-
 
 # ============================================================
 # 1. 告警数据结构

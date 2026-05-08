@@ -17,11 +17,9 @@ from __future__ import annotations
 import hashlib
 import math
 import re
-import sys
 from collections import Counter
 from dataclasses import dataclass, field
 from typing import Any
-
 
 # ============================================================
 # 1. 向量运算 + Embedding 工具

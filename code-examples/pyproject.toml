@@ -74,6 +74,17 @@ line-length = 120
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "N", "UP"]
+ignore = [
+    "N999",   # 模块名用数字编号排序，教学项目有意为之
+    "N806",   # ML 惯例：X, X_train 等变量名
+    "N803",   # ML/数学惯例：Q, K, V 等参数名
+    "N802",   # 模拟外部库 API 需保持原命名（如 OpenCV 的 cvtColor）
+    "N812",   # PyTorch 惯例：import torch.nn.functional as F
+    "F841",   # 教学代码中演示赋值结果，未必使用
+    "F541",   # print 语句中使用 f-string 保持一致性
+    "E501",   # 中文教学内容行长度不适合 120 字符限制
+    "E741",   # 列表推导中 l 等短变量名可接受
+]
 
 [tool.pytest.ini_options]
 testpaths = ["../tests"]

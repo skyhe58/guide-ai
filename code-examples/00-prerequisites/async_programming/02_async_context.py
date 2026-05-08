@@ -17,7 +17,6 @@ import contextlib
 import time
 from typing import Any
 
-
 # ============================================================
 # 1. 异步上下文管理器基础 — __aenter__ / __aexit__
 # ============================================================
@@ -40,7 +39,7 @@ class AsyncDatabasePool:
         self._connections: list[str] = []
         self._initialized = False
 
-    async def __aenter__(self) -> "AsyncDatabasePool":
+    async def __aenter__(self) -> AsyncDatabasePool:
         """异步初始化连接池。
 
         __aenter__ 在 async with 块开始时调用，
@@ -228,7 +227,7 @@ class AsyncMLPipeline:
         self.config = config
         self._resources: dict[str, Any] = {}
 
-    async def __aenter__(self) -> "AsyncMLPipeline":
+    async def __aenter__(self) -> AsyncMLPipeline:
         """按依赖顺序初始化所有资源。"""
         print("  🏗️ 初始化 ML 流水线资源...")
 

@@ -33,7 +33,6 @@ from typing import Any
 
 import aiohttp
 
-
 # ============================================================
 # 1. aiohttp.ClientSession 基础 — GET/POST 请求
 # ============================================================
@@ -238,7 +237,7 @@ async def demo_timeout() -> None:
             async with session.get("https://httpbin.org/delay/3") as response:
                 data = await response.text()
                 print(f"  ✅ 请求成功: {len(data)} bytes")
-    except asyncio.TimeoutError:
+    except TimeoutError:
         print("  ⏰ 请求超时（0.5s），符合预期")
         print("  💡 在生产环境中，超时后应启动降级或重试策略")
     except aiohttp.ClientError as e:
@@ -257,7 +256,7 @@ async def demo_timeout() -> None:
                 timeout=aiohttp.ClientTimeout(total=5),
             ) as response:
                 print(f"  ✅ 使用请求级别超时 (5s): 状态码={response.status}")
-    except (asyncio.TimeoutError, aiohttp.ClientError) as e:
+    except (TimeoutError, aiohttp.ClientError) as e:
         print(f"  ⚠️ 请求失败: {e}")
 
 
@@ -322,7 +321,7 @@ async def fetch_with_retry(
                     "success": True,
                 }
 
-        except asyncio.TimeoutError:
+        except TimeoutError:
             last_error = TimeoutError(f"请求超时 ({timeout}s)")
             print(f"    ⏰ 第 {attempt} 次: 超时")
         except aiohttp.ClientConnectorError as e:
@@ -540,7 +539,7 @@ async def demo_ollama_server_mode() -> None:
                 else:
                     print(f"  ⚠️ Ollama 返回异常状态: {resp.status}")
                     return
-        except (aiohttp.ClientError, asyncio.TimeoutError):
+        except (TimeoutError, aiohttp.ClientError):
             print("  ❌ 无法连接 Ollama 服务")
             print("  💡 请先启动 Ollama:")
             print("     docker compose -f docker/docker-compose.yml up -d ollama")

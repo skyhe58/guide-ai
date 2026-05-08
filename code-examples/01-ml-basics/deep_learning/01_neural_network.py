@@ -12,11 +12,9 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
-
 
 # ============================================================
 # 1. 模型定义

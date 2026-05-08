@@ -22,8 +22,6 @@ import time
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Any, Optional
-
 
 # ============================================================
 # 1. MCP 客户端数据结构
@@ -45,13 +43,13 @@ class ServerConnection:
     """MCP Server 连接信息"""
     name: str                       # Server 名称
     state: ConnectionState = ConnectionState.DISCONNECTED
-    server_info: Optional[dict] = None   # Server 信息
-    capabilities: Optional[dict] = None  # Server 能力
+    server_info: dict | None = None   # Server 信息
+    capabilities: dict | None = None  # Server 能力
     tools: list = field(default_factory=list)       # 可用工具列表
     resources: list = field(default_factory=list)    # 可用资源列表
     prompts: list = field(default_factory=list)      # 可用 Prompt 模板
-    connected_at: Optional[datetime] = None
-    last_activity: Optional[datetime] = None
+    connected_at: datetime | None = None
+    last_activity: datetime | None = None
 
 
 @dataclass
@@ -62,7 +60,7 @@ class ToolCallResult:
     success: bool           # 是否成功
     content: str            # 返回内容
     duration_ms: float      # 耗时（毫秒）
-    error: Optional[str] = None  # 错误信息
+    error: str | None = None  # 错误信息
 
 
 @dataclass
@@ -260,7 +258,7 @@ class MCPClient:
                     })
         return all_tools
 
-    def find_tool(self, tool_name: str) -> Optional[dict]:
+    def find_tool(self, tool_name: str) -> dict | None:
         """查找工具及其所在的 Server"""
         server_name = self._tool_router.get(tool_name)
         if not server_name:
@@ -460,7 +458,6 @@ async def demo():
     """运行 MCP 客户端演示"""
     # 导入 Server（从同目录的 01_mcp_server.py）
     # 这里直接创建 Server 实例
-    from importlib import import_module
     import os
 
     print("=" * 60)
@@ -470,7 +467,7 @@ async def demo():
     # 尝试导入 Server 模块
     try:
         sys.path.insert(0, os.path.dirname(__file__))
-        from importlib.util import spec_from_file_location, module_from_spec
+        from importlib.util import module_from_spec, spec_from_file_location
         server_path = os.path.join(os.path.dirname(__file__), "01_mcp_server.py")
         spec = spec_from_file_location("mcp_server", server_path)
         mcp_server_module = module_from_spec(spec)

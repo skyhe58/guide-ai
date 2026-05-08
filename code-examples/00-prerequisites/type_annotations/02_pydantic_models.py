@@ -17,7 +17,6 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, Field, field_validator, model_validator
 
-
 # ============================================================
 # 1. 基础 Pydantic 模型
 # ============================================================
@@ -109,7 +108,7 @@ class RAGQuery(BaseModel):
         return v
 
     @model_validator(mode="after")
-    def check_rerank_requires_enough_results(self) -> "RAGQuery":
+    def check_rerank_requires_enough_results(self) -> RAGQuery:
         """模型级验证：开启 rerank 时 top_k 不能太小。"""
         if self.rerank and self.top_k < 3:
             raise ValueError("开启 rerank 时 top_k 至少为 3")

@@ -18,11 +18,10 @@ import hashlib
 import json
 import os
 import re
-import sys
+from collections.abc import Generator
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Generator
-
+from typing import Any
 
 # ============================================================
 # 1. Document 数据模型（模拟 LangChain Document）

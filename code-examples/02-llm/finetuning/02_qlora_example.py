@@ -18,8 +18,6 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import torch
-import torch.nn as nn
-
 
 # ============================================================
 # 1. NF4 量化模拟（QLoRA 核心）

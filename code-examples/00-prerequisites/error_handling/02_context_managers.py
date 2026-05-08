@@ -17,7 +17,6 @@ import contextlib
 import time
 from typing import Any
 
-
 # ============================================================
 # 1. __enter__ / __exit__ 协议
 # ============================================================
@@ -38,7 +37,7 @@ class GPUMemoryManager:
         self.memory_gb = memory_gb
         self._allocated = False
 
-    def __enter__(self) -> "GPUMemoryManager":
+    def __enter__(self) -> GPUMemoryManager:
         """分配 GPU 显存。"""
         print(f"  🔋 分配 {self.memory_gb}GB GPU 显存: {self.model_name}")
         self._allocated = True

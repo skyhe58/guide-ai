@@ -15,8 +15,6 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import time
-import uuid
-from dataclasses import dataclass
 from typing import Any
 
 # ============================================================
@@ -33,7 +31,6 @@ except ImportError:
 
 # 导入客服引擎
 from main import CustomerServiceEngine
-
 
 # ============================================================
 # 请求/响应模型

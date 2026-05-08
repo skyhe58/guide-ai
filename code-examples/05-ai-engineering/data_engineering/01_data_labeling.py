@@ -12,12 +12,10 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import random
-import time
-from collections import Counter, defaultdict
+from collections import Counter
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any
-
 
 # ============================================================
 # 1. 标注任务数据结构

@@ -11,11 +11,10 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import numpy as np
 from sklearn.datasets import make_classification
-from sklearn.tree import DecisionTreeClassifier, export_text
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.tree import DecisionTreeClassifier, export_text
 
 
 def demo_decision_tree() -> None:

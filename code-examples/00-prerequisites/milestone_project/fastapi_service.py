@@ -25,9 +25,8 @@ from typing import Literal
 
 import numpy as np
 import pandas as pd
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-
 
 # ============================================================
 # 1. Pydantic 模型（请求/响应）

@@ -19,15 +19,11 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import json
 import random
 import statistics
-import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum
-from typing import Any, Optional
-
 
 # ============================================================
 # 1. 评测数据结构

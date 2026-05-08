@@ -17,12 +17,9 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import json
 import math
 import sys
 from dataclasses import dataclass, field
-from typing import Any
-
 
 # ============================================================
 # 1. 数据结构 — Few-shot 示例
@@ -71,7 +68,7 @@ class SimpleEmbedding:
         """构建词汇索引。"""
         self._vocab_index = {word: i for i, word in enumerate(self._vocabulary)}
 
-    def fit(self, texts: list[str]) -> "SimpleEmbedding":
+    def fit(self, texts: list[str]) -> SimpleEmbedding:
         """从文本集合中构建词汇表。"""
         vocab_set: set[str] = set()
         for text in texts:

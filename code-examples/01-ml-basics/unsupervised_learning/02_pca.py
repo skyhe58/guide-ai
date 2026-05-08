@@ -12,8 +12,8 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import numpy as np
-from sklearn.decomposition import PCA
 from sklearn.datasets import make_blobs
+from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 

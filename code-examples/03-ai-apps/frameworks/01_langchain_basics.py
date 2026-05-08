@@ -15,10 +15,9 @@ import json
 import re
 import time
 from abc import ABC, abstractmethod
+from collections.abc import Callable
 from dataclasses import dataclass, field
-from enum import Enum
-from typing import Any, Callable
-
+from typing import Any
 
 # ============================================================
 # 1. Prompt Template — 提示词模板
@@ -54,7 +53,7 @@ class ChatPromptTemplate:
         self.message_templates = messages
 
     @classmethod
-    def from_messages(cls, messages: list[tuple[str, str]]) -> "ChatPromptTemplate":
+    def from_messages(cls, messages: list[tuple[str, str]]) -> ChatPromptTemplate:
         """从消息列表创建模板。"""
         return cls(messages)
 
@@ -207,7 +206,7 @@ class Runnable(ABC):
     def invoke(self, input_data: Any) -> Any:
         """执行组件。"""
 
-    def __or__(self, other: "Runnable") -> "RunnableSequence":
+    def __or__(self, other: Runnable) -> RunnableSequence:
         """管道符 | 重载，实现 LCEL 链式调用。"""
         return RunnableSequence(steps=[self, other])
 
@@ -225,7 +224,7 @@ class RunnableSequence(Runnable):
             result = step.invoke(result)
         return result
 
-    def __or__(self, other: Runnable) -> "RunnableSequence":
+    def __or__(self, other: Runnable) -> RunnableSequence:
         return RunnableSequence(steps=self.steps + [other])
 
 

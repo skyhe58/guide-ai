@@ -17,7 +17,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-
 # ============================================================
 # 1. RMSNorm（现代 LLM 替代 LayerNorm）
 # ============================================================

@@ -6,12 +6,20 @@ Python 版本：3.11+
 最后验证：2024-12-01
 """
 from __future__ import annotations
-import numpy as np
+
 from sklearn.datasets import make_classification
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    confusion_matrix,
+    f1_score,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+)
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_score,
-                             roc_auc_score, confusion_matrix, classification_report)
+
 
 def demo_classification_metrics() -> None:
     """分类评估指标。"""

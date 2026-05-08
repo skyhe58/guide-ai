@@ -15,10 +15,8 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import re
-import sys
 from dataclasses import dataclass, field
 from typing import Any
-
 
 # ============================================================
 # 1. Document 数据模型

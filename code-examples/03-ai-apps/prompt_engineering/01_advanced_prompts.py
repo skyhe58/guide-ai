@@ -22,7 +22,6 @@ import sys
 from string import Template
 from typing import Any
 
-
 # ============================================================
 # 1. Prompt 模板管理系统
 # ============================================================
@@ -215,7 +214,7 @@ def demo_separator_defense() -> None:
 
     print(f"\n  ✅ 安全的 Prompt（使用分隔符）:")
     print(f"     {safe_prompt[:120]}...")
-    print(f"\n  💡 分隔符让 LLM 区分"指令"和"数据"，恶意指令被当作数据处理")
+    print("\n  💡 分隔符让 LLM 区分「指令」和「数据」，恶意指令被当作数据处理")
 
 
 def demo_few_shot_design() -> None:

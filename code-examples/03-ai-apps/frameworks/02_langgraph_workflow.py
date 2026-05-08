@@ -14,10 +14,9 @@ from __future__ import annotations
 import json
 import time
 from abc import ABC, abstractmethod
+from collections.abc import Callable
 from dataclasses import dataclass, field
-from enum import Enum
-from typing import Any, Callable
-
+from typing import Any
 
 # ============================================================
 # 1. State — 状态定义
@@ -304,7 +303,7 @@ class StateGraph:
         """设置入口节点。"""
         self.entry_point = node_name
 
-    def compile(self) -> "CompiledGraph":
+    def compile(self) -> CompiledGraph:
         """编译图，返回可执行的图。"""
         return CompiledGraph(self)
 

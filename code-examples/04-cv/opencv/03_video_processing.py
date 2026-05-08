@@ -18,11 +18,11 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import time
-import numpy as np
-from dataclasses import dataclass, field
-from typing import Any, Generator
-from enum import Enum
+from collections.abc import Generator
+from dataclasses import dataclass
+from typing import Any
 
+import numpy as np
 
 # ============================================================
 # 1. 视频属性与编解码器

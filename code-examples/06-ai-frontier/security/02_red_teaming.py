@@ -15,15 +15,9 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import hashlib
-import json
-import random
-import re
-import time
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Any, Callable, Optional
-
 
 # ============================================================
 # 1. 红队测试数据结构
@@ -408,7 +402,6 @@ class RedTeamFramework:
 
 async def demo():
     """运行红队测试演示"""
-    import asyncio
 
     print("=" * 60)
     print("AI 红队测试演示")

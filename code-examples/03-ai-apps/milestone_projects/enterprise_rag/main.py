@@ -16,14 +16,10 @@ Python 版本：3.11+
 from __future__ import annotations
 
 import hashlib
-import json
 import math
-import os
-import re
 import time
 from dataclasses import dataclass, field
 from typing import Any
-
 
 # ============================================================
 # 1. 文档加载器

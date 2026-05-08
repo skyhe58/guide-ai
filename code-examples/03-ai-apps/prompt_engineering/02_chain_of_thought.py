@@ -17,12 +17,10 @@ Python 版本：3.11+
 
 from __future__ import annotations
 
-import random
 import re
 import sys
 from collections import Counter
 from typing import Any
-
 
 # ============================================================
 # 1. Zero-shot CoT — 只需一句"魔法咒语"
@@ -86,7 +84,7 @@ class FewShotCoT:
         self.task_instruction = task_instruction
         self.examples: list[dict[str, str]] = []
 
-    def add_example(self, question: str, reasoning: str, answer: str) -> "FewShotCoT":
+    def add_example(self, question: str, reasoning: str, answer: str) -> FewShotCoT:
         """添加一个推理示例（链式调用）。"""
         self.examples.append({
             "question": question,
