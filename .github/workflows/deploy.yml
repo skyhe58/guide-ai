@@ -27,7 +27,7 @@ jobs:
     steps:
       # 1. Checkout 代码
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -71,11 +71,11 @@ jobs:
 
       # --- 可选步骤结束 ---
 
-      # 3. 安装 Node.js 20 + pnpm
+      # 3. 安装 Node.js + pnpm
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
